@@ -1,0 +1,23 @@
+float angle;
+void setup(){
+  size(900,900);
+}
+void draw(){
+  background(225);
+  stroke(0);
+  
+  fill(150,0,0);
+    rectMode(CENTER);
+    translate(width/2, height/2);
+    rotate(radians(angle));
+    angle += 10;
+    scale(0.5);
+  rect(0,0,200,200);
+  
+  translate(300,0);
+  rect(0,0,200,200);
+  
+  translate(400,0);
+  rect(0,0,200,200);
+
+}
